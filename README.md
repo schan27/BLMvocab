@@ -3,4 +3,4 @@
 ## To do
 * Set up cron job to run daily 
 * Sort vocabulary items by topic
-* Consult with translators about layout/language filter
+* Consult with translators regarding layout/language filter
