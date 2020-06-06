@@ -8,6 +8,9 @@ from google.auth.transport.requests import Request
 
 
 app = Flask(__name__)
+base_url = "BLMvocab"
+app.config['FREEZER_RELATIVE_URLS'] = True
+app.config['FREEZER_BASE_URL'] = base_url
 
 SPREADSHEET_ID = "1IyUen-aRQJdoDZN-uzKVByqe6RYNyfTQifotFCgIBDY"
 RANGE = "Sheet1!A:Z"  # entire sheet
