@@ -1,0 +1,21 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pure-min.css') }}">
+</head>
+
+
+<table class="pure-table pure-table-bordered">
+    <thead>
+    {% for element in header %}
+        <th>{{ element }}</th>
+    {% endfor %}
+    </thead>
+
+    {% for row in rows %}
+    <tr>
+        {% for element in row %}
+        <td>{{ element }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
