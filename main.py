@@ -27,10 +27,21 @@ def get_data():
     header = rows[0]
     rows = rows[1:]
     # pad rows with values
+
     for i, row in enumerate(rows):
         if len(row) < len(header):
             padding = [""] * (len(header)-len(row))
             rows[i] += padding
+        
+        for i, el in enumerate(row):
+            if not el: # empty cell
+                continue 
+            
+            if i <= 3:
+                continue 
+
+            row[i] = el.lower()
+            
     
     # TODO: sort vocabulary items by topic
     return rows, header
