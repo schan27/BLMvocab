@@ -8,13 +8,13 @@ from google.auth.transport.requests import Request
 
 
 app = Flask(__name__)
-base_url = "BLMvocab"
-app.config['FREEZER_RELATIVE_URLS'] = True
-app.config['FREEZER_BASE_URL'] = base_url
 
+REPO_NAME = "BLMvocab"
+FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
 SPREADSHEET_ID = "1IyUen-aRQJdoDZN-uzKVByqe6RYNyfTQifotFCgIBDY"
 RANGE = "Sheet1!A:Z"  # entire sheet
 
+app.config['FREEZER_BASE_URL'] = FREEZER_BASE_URL
 
 def get_data():
     with open('token.pickle', 'rb') as token:
