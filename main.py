@@ -1,6 +1,6 @@
 import os
 import pickle
-import pandas as pd
+# import pandas as pd
 from flask import Flask, render_template
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
