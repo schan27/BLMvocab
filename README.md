@@ -1,4 +1,4 @@
-# ✊🏿 BLM Chinese Vocabulary
+# ✊🏿✊🏾 BLM Chinese Vocabulary
 
 ## To do
 * Consult with translators regarding layout/language filter
